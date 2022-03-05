@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Pastelero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(2, 2, 2);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(155, 27, 160);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(158, 24, 151);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #d125d1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(138, 37, 163);
+            padding: 10px;
+            text-align: center;
+            color: rgb(80, 219, 166);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Pagina Pastelero</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Inventario Sabores</a></li>
+                <li><a href="#">Inventario Adornos</a></li>
+                <li><a href="#">Pedidos</a></li>
+            </ul>
+        </nav>
+
+        
+    </section>
+
+    <footer>
+        <p>Av siempre viva #742</p>
+    </footer>
+
+</body>
+
+</html>
